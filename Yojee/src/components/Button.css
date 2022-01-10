@@ -1,0 +1,134 @@
+:root {
+    --primary: #bb21ab;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .btn--primary {
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+  }
+  
+  .btn--outline {
+    background-color: #bb21ab;
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
+  
+
+  .btn--circle{
+    width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 12px solid white;
+  background-color: #ae20ab;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  cursor:none;
+  z-index: -1;
+  }
+  
+  .btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+  }
+  
+  .btn--mobile {
+    text-align: center;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #bb21ab;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn--wide {
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: max-content;
+    margin-right: 10px;
+  }
+
+  .btn--circle:hover{
+    cursor: none;
+    transform: none;
+  }
+  
+  .btn--large:hover,
+  .btn--medium:hover
+   {
+    transform:scale(1.2);
+    background: #bb21ab;
+    color: #242424;
+  }
+
+  .btn--mobile:hover{
+    transition: all 0.3s ease-out;
+    background: #bb21ab;
+    color: #242424;
+  }
+  
+  .btn--wide:hover {
+    color: #fff;
+    background-color: #f00946;
+    transition: all 0.2s ease-out;
+  }
+  
+  .btn-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .white {
+    background-color: white;
+    color: #bb21ab;
+    border-style: solid;
+    border-color: #BB21AB;
+  }
+  .white:hover{
+    background-color: #bb21ab;
+    color:white;
+  }
+
+  .pink {
+    background-color:#bb21ab;
+    border-color: white;
+  }
+  
+  
+  
+  /* .primary {
+    background-color: #242424;
+    color: #fff;
+    border: none;
+  }
+  
+  .primary:hover {
+    background-color: #fff;
+    color: #242424;
+    border: none;
+  } */
+  
+  
