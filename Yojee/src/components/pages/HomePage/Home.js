@@ -2,13 +2,13 @@ import React from 'react'
 import Amount from '../../Amount'
 import Chart from '../../Chart'
 import Featured from '../../Featured'
-import HeroSection from '../../HeroSection'
-import { homeObjOne, homeObjThree, homeObjTwo } from './Data'
+import Carousel from '../../Carousel'
+import { homeObjOne, homeObjTwo } from './Data'
 
 function Home() {
     return (
         <>
-            <HeroSection {...homeObjOne} />
+            <Carousel {...homeObjOne} />
             <Featured />
             <Chart/>
             <Amount {...homeObjTwo} />

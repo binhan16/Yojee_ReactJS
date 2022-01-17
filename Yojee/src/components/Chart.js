@@ -5,23 +5,20 @@ import './Chart.css'
 
 function Chart() {
     const [click, setClick] = useState(false)
-    const [button, setButton] = useState(true);
-
-    const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
     return (
         < >
             <div className='chart'>
-                <p>Automate your operations with 
-                <br /> delivery management software</p>
+                <p>Automate your operations with delivery
+                <br />  management software</p>
                 <div className="container ">
                     <div className="row">
-                        <div className="left-chart col-sm-7 col-12">
+                        <div className="chart-left col-sm-7 col-12">
                             <img src="./image/chart.png" alt="chart" />
                             <br />
                             <p>Get real-time ETA based on the drivers location while keeping <br/>  your customers informed  and dramatically reduces customer </p>
                         </div> 
-                        <div className="right-chart col-sm-5 col-12">    
+                        <div className="chart-right col-sm-5 col-12">    
                             <div className="item ">
                                 <div className="text">
                                     <div className="icon-chart">
@@ -76,10 +73,9 @@ function Chart() {
                     </div>  
                 </div>
                 <br />
-                <Link to='/'
-                    
+                <Link className="btn-find" to='/'
                     onClick={closeMobileMenu}>
-                    <Button className="btn-find" buttonStyle={"btn--outline"} >
+                    <Button  buttonStyle={"btn--outline"} >
                         FIND OUT MORE
                     </Button>
                 </Link>

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from '../../Button';
 import { Link } from 'react-router-dom';
 import {
     FaFacebook,
@@ -64,7 +63,7 @@ function Footer() {
                   <li class="pr-5">Privacy Policy</li>
                   <li class="pr-5">Term and Conditions</li>
                 </ul>
-                    {/* <small className='website-rights'>LAVISH © 2020</small> */}
+
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link'

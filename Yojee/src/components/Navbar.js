@@ -30,14 +30,13 @@ function Navbar() {
             
 
 
-                <div className="navbar">
+                <div className="navbar-main ">
                     <div className="navbar-container container">
                         <Link to='/'
                             className="navbar-logo"
                             onClick={closeMobileMenu}
                         >
-                            <image src=".image/Logo.png"/>
-
+                            <img src="./image/Logo.png" alt='logo'/>
                         </Link>
                         <div className="menu-icon" onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
@@ -80,13 +79,13 @@ function Navbar() {
                             </li>
                             <li className="nav-btn">
                                 {button ? (
-                                    <Link to='/sign-up' className="btn-link" >
-                                        <Button buttonColor='btn--outline'>DEMO</Button>
+                                    <Link to='/sign-up'  >
+                                        <button className="btn-demo">DEMO</button>
                                     </Link>
                                 ) : (
                                     <Link
                                         to='/sign-up'
-                                        className="btn-link"
+                                        
                                         onClick={closeMobileMenu}
                                     >
                                         <Button buttonStyle='btn--outline'
