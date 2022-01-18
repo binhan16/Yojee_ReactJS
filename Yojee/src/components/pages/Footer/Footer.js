@@ -83,9 +83,7 @@ function Footer() {
                         </Link>
                         <Link
                             className='social-icon-link'
-                            to={
-                                'https://www.youtube.com/watch?v=A1JGK-ZfnhA'
-                            }
+                            to='/'
                             target='_blank'
                             aria-label='Youtube'
                         >

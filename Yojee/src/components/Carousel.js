@@ -5,72 +5,7 @@ import { Link } from "react-router-dom";
 
 function Carousel() {
   return (
-    // <>
-    //     <div
-    //         className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
-    //     >
-    //         <div className='container'>
-    //             <div
-    //                 className='row home__hero-row'
-    //                 style={{
-    //                     display: 'flex',
-    //                     flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
-    //                 }}
-    //             >
-    //                 <div className='col-12 col-sm-7'>
-    //                     <div className='home__hero-text-wrapper'>
-    //                         <h1 className={lightText ? 'heading' : 'heading dark'}>
-    //                             {headline}
-    //                         </h1>
-    //                         <p
-    //                             className={
-    //                                 lightTextDesc
-    //                                     ? 'home__hero-subtitle'
-    //                                     : 'home__hero-subtitle '
-    //                             }
-    //                         >
-    //                             {description}
-    //                         </p>
-    //                         <p className="title">Choose solutions:</p>
-    //                         <br/>
-    //                         <div className='btn-swf'>
 
-    //                             <ul className="row">
-    //                                 <li className="col-12  btn-1">
-    //                                     <Link to='/'>
-    //                                     <Button  buttonSize='btn--wide' buttonColor='white'>
-    //                                         {buttonLabel}
-    //                                     </Button>
-    //                                     </Link>
-
-    //                                 </li>
-    //                                 <li className="col-12  btn-2">
-    //                                     <Link to='/'>
-    //                                         <Button  buttonSize='btn--wide' buttonColor='white'>
-    //                                             {buttonLabel2}
-    //                                         </Button>
-    //                                     </Link>
-    //                                 </li>
-    //                                 <li className="col-12  btn-1">
-    //                                     <Link to='/'>
-    //                                         <Button  buttonSize='btn--wide' buttonColor='white'>
-    //                                             {buttonLabel3}
-    //                                         </Button>
-    //                                     </Link>
-    //                                 </li>
-    //                             </ul>
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //                 <div className='col-12 col-sm-5 '>
-    //                     <div className='home__hero-img-wrapper'>
-    //                         <img src="./image/Business logistics.png" alt={alt} className='home__hero-img' />
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </>
     <section className="carousel container">
       <div className="row">
         <div className="carousel-content col-12 col-sm-7 ">

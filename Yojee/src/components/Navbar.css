@@ -26,11 +26,13 @@
     padding-left: 50px;
   } */
   
+  .navbar-logo{
+    margin-top: -10px;
+  }
 
   .navbar-logo img{
     max-width: 150px;
     height:auto;
-    line-height: 20px;
   }
   
   .navbar-icon {
