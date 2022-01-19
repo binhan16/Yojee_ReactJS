@@ -1,27 +1,17 @@
 import React from "react";
 import "./Form.css";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-
-const btnPink = {
-  outline: "none!important",
-  border: "none",
-  color: "white",
-  backgroundColor: "#bb21ab",
-  fontSize: "18px",
-  fontWeight: "800",
-  padding: "10px 40px",
-  transition: "all .3s",
-  marginTop: "10px",
-};
-
-const SignupSchema=yup.object().shape({
-    firstName: yup.string().required(),
-    lastName: yup.string().required(),
-})
 
 function Form() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data));
+  };
   return (
     <>
       <section className="form">
@@ -37,47 +27,107 @@ function Form() {
                 <img src="./image/Freight quote request.png" />
               </div>
               <div className="form-input col-12 col-sm-6">
-                <form>
-                  <div>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                  <div className="form-group">
                     <label>First Name</label>
                     <input
                       placeholder="Your name..."
-                      {...register("firstName")}
+                      {...register("firstName", {
+                        required: true,
+                        pattern: /^[A-Za-z]+$/i,
+                        maxLength: 20,
+                      })}
                     />
+
+                    {errors?.firstName?.type === "required" && (
+                      <p>This field is required</p>
+                    )}
+                    {errors?.firstName?.type === "maxLength" && (
+                      <p>First name cannot exceed 20 characters</p>
+                    )}
+                    {errors?.firstName?.type === "pattern" && (
+                      <p>Alphabetical characters only</p>
+                    )}
                   </div>
-                  <div>
-                    <label>Last Name</label>
-                    <input
-                      placeholder="Your last name..."
-                      {...register("lastName")}
-                    />
+
+                 <div className="form-group">
+                 <label>Last Name</label>
+                  <input
+                    placeholder="Your last name..."
+                    {...register("lastName", {
+                      required: true,
+                      pattern: /^[A-Za-z]+$/i,
+                      maxLength: 20,
+                    })}
+                  />
+                  {errors?.lastName?.type === "required" && (
+                    <p>This field is required</p>
+                  )}
+                  {errors?.lastName?.type === "maxLength" && (
+                    <p>Last name cannot exceed 20 characters</p>
+                  )}
+                  {errors?.lastName?.type === "pattern" && (
+                    <p>Alphabetical characters only</p>
+                  )}
+                 </div>
+                    <br />
+                  <div className="form-group">
+                  <label>Contact Number</label>
+                  <input
+                    placeholder="Your contact number..."
+                    {...register("contactNumber", {
+                      required: true,
+                      pattern: /^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/i,
+                    })}
+                  />
+                  {errors?.contactNumber?.type === "required" && (
+                    <p>This field is required</p>
+                  )}
+                  {errors?.contactNumber?.type === "pattern" && (
+                    <p>Number characters only</p>
+                  )}
                   </div>
-                  <div>
-                    <label>Contact Number</label>
-                    <input
-                      placeholder="Your contact number..."
-                      {...register("contactNumber")}
-                    />
+
+                  <div className="form-group">
+                  <label>Company</label>
+                  <input
+                    placeholder="Your company..."
+                    {...register("company", { required: true })}
+                  />
+                  {errors?.company?.type === "required" && (
+                    <p>This field is required</p>
+                  )}
                   </div>
-                  <div>
-                    <label>Company</label>
-                    <input
-                      placeholder="Your company..."
-                      {...register("company")}
-                    />
+
+                  <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    placeholder="Your email..."
+                    {...register("email", {
+                      required: true,
+                      pattern:
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    })}
+                  />
+                  {errors?.email?.type === "required" && (
+                    <p>This field is required</p>
+                  )}
+                  {errors?.email?.type === "pattern" && <p>Email invalidate</p>}
                   </div>
-                  <div>
-                    <label>Email</label>
-                    <input placeholder="Your email..." {...register("email")} />
+
+                  <div className="form-group">
+                  <label>Country</label>
+                  <select {...register("country")}>
+                    <option value="usa">USA</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                  </select>
                   </div>
-                  <div>
-                    <label>Country</label>
-                    <select {...register("country")}>
-                      <option value="usa">USA</option>
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                    </select>
-                  </div>
+
+                  <button type="submit" className="btn-pink">
+                    BOOK A DEMO
+                  </button>
+                
                 </form>
               </div>
             </div>

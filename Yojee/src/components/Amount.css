@@ -71,3 +71,24 @@
     font-size: 20px;
     color: white;
   }
+
+
+  @media  screen and (max-width:768px){
+    .amount-body h1{
+      font-size: 30px;
+    }
+
+    .amount-body .title{
+      font-size: 16px;
+      padding: 0 65px;
+    }
+
+    .container{
+      text-align: center;
+    }
+
+    .btn-amount{
+      margin-left: -10px;
+    }
+
+  }

@@ -74,4 +74,35 @@
   border-bottom: none;
 }
 
+@media screen and (max-width:768px) {
+  .carousel-text h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .carousel-text p {
+    font-size: 18px;
+    text-align: center;
+    padding:0 30px;
+  }
+
+  .carousel-button{
+    text-align: center;
+  }
+
+  .carousel-button .btn-chose{
+    width:calc(100% - 40px);
+    margin-bottom:20px ;
+    text-align: center;
+  }
+
+  .carousel-button .btn-2{
+    margin-left: 0;
+  }
+
+  .carousel-image{
+    text-align: center;
+  }
+
+}
+
 
