@@ -65,19 +65,19 @@ function Navbar() {
                             </li>
                         </ul>
 
-                        <ul className={click ? 'nav-menu1 active' : 'nav-menu1'}>
+                        <ul className={click ? 'nav-menu1 active' : 'nav-menu1 '}>
 
-                            <li className="nav-item">
+                            <li className="nav-item ">
                                 <Link to='/oursoftware' className="nav-links" onClick={closeMobileMenu}>
                                 Contact
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item ">
                                 <Link to='/industry' className="nav-links" onClick={closeMobileMenu}>
                                 Send SG
                                 </Link>
                             </li>
-                            <div className="nav-btn">
+                            <div className="nav-btn ">
                                 {button ? (
                                     <Link to='/sign-up'  >
                                         <button className="btn-demo">DEMO</button>

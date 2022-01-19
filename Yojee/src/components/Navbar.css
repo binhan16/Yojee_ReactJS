@@ -130,6 +130,19 @@
       z-index: 1;
     }
 
+    .nav-links {
+      text-align: left;
+      padding: 10px;
+      width: 100%;
+      display: table;
+      border-bottom: 1px solid #555;
+    }
+
+    .nav-links:hover {
+      color: #bb21ab;
+      font-weight: 600;
+    }
+
     .nav-menu1 {
       display: flex;
       flex-direction: column-reverse;
@@ -151,25 +164,14 @@
       z-index: 1;
     }
   
-    .nav-links {
-      text-align: left;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-      border-bottom: 1px solid #555;
-    }
+    
 
     .nav-menu1 .nav-item{
       border-bottom: none;
       max-width:max-content;
       
     }
-  
-    .nav-links:hover {
-      color: #bb21ab;
-      font-weight: 600;
-    }
-  
+
     .nav-item:hover {
       border: none;
     }
@@ -204,7 +206,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 120px;
+      background-color: #bb21ab;
+      color: white;
+      padding: 10px 40px;
+      border-radius: 10px;
     }
   }
