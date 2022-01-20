@@ -16,16 +16,6 @@
     height: 80px;
   }
   
-  /* .container {
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-  } */
-  
   .navbar-logo{
     margin-top: -10px;
   }
@@ -85,12 +75,11 @@
     background: #bb21ab;
     padding: 10px 30px;
     transition: all .3s;
-    /* margin-top: 10px; */
     font-size: 18px !important;
   }
 
   .btn-demo:hover{
-    /* border-bottom: none; */
+
     transform: scale(1.2);
     text-decoration: none;
     color:white;

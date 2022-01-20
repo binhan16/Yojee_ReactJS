@@ -44,6 +44,9 @@ function Navbar() {
                 Our Software
               </Link>
               <FaChevronRight className="nav-icon d-none" />
+              <ul>
+                  <li>API</li>
+              </ul>
             </li>
             <li className="nav-item">
               <Link
