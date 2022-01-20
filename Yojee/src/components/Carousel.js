@@ -8,7 +8,7 @@ function Carousel() {
 
     <section className="carousel container">
       <div className="row">
-        <div className="carousel-content col-12 col-sm-7 ">
+        <div className="carousel-content col-12 col-sm-8 ">
           <div className="carousel-text ">
             <h1 className="font-weight-bold">See the world flow</h1>
             <p className="font-weight-bold">
@@ -18,18 +18,18 @@ function Carousel() {
           </div>
           <div className="carousel-button">
             <p>Chose your solutions:</p>
-            <ul className=" row" >
-                <li className="col-12 col-sm-4 ">
+            <ul className=" row flex-column flex-md-row" >
+                <li >
                   <button className="btn-chose btn-1">
                     <span>ALL-IN-ONE SAAS PLATFORM</span>
                   </button>
                 </li>
-                <li className="col-12 col-sm-4">
+                <li >
                   <button className="btn-chose btn-2">
                     <span>REDUCE COST</span>
                   </button>
                 </li>
-                <li className="col-12 col-sm-4">
+                <li >
                   <button className='btn-chose btn-1'>
                     <span>IMPROVE VISIBILITY</span>
                   </button>
@@ -37,7 +37,7 @@ function Carousel() {
             </ul>
           </div>
         </div>
-        <div className="carousel-image col-12 col-sm-5 ">
+        <div className="carousel-image col-12 col-sm-4 ">
           <img src="./image/Business logistics.png" />
         </div>
       </div>

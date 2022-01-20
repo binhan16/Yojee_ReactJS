@@ -13,7 +13,7 @@ function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
           <p className="title">{description}</p>
           <div className="container ">
             <ul className=" row text-align-center">
-              <li className="col-12 col-sm-4  ">
+              <li className=" col-md-4 ">
                 <Link to="/">
                   <button className="btn-amount">
                     4 <br /> out of 10
@@ -24,13 +24,13 @@ function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
                   technolog
                 </p>
               </li>
-              <li className="col-12 col-sm-4 ">
+              <li className=" col-md-4 ">
                 <Link to="/">
                   <button className="btn-amount">{buttonLabel2}</button>
                 </Link>
                 <p>{p2}</p>
               </li>
-              <li className="col-12 col-sm-4 ">
+              <li className=" col-md-4 ">
                 <Link to="/">
                   <button className="btn-amount">{buttonLabel3}</button>
                 </Link>

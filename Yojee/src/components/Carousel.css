@@ -44,9 +44,9 @@
   border-radius: 8px;
   width:max-content;
   text-align: center;
-  padding: 18px 20px ;
+  padding: 18px 40px ;
   transition: all 0.3s;
-  margin-left: 55px;
+
 }
 
 .carousel-button .btn-1{
@@ -90,7 +90,7 @@
   }
 
   .carousel-button .btn-chose{
-    width:calc(100% - 40px);
+    width: 400px;
     margin-bottom:20px ;
     text-align: center;
   }
