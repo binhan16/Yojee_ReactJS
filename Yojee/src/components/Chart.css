@@ -103,6 +103,10 @@
   font-weight: 400;
 }
 
+.slick-arrow{
+  display: none !important;
+}
+
 .chart-left img {
   max-width: 750px;
   width: 100%;
@@ -142,6 +146,7 @@
   .chart-left p {
     text-align: center;
     font-size: 18px;
+    margin-top: 20px;
   }
 
   .chart-right {
