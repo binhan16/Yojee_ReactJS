@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
+import Dropdown from './Dropdown'
 import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
+  
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -41,12 +43,11 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Our Software
+                <Dropdown/>  
+                <FaChevronRight className="nav-icon d-none" />
               </Link>
-              <FaChevronRight className="nav-icon d-none" />
-              <ul>
-                  <li>API</li>
-              </ul>
+              
+              
             </li>
             <li className="nav-item">
               <Link
@@ -55,8 +56,9 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Industry
+                <FaChevronRight className="nav-icon d-none" />
               </Link>
-              <FaChevronRight className="nav-icon d-none" />
+              
             </li>
             <li className="nav-item">
               <Link

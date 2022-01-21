@@ -64,6 +64,7 @@
     color: #bb21ab;
     text-decoration: none;
   }
+
   
   .btn-demo{
     outline: none !important;
@@ -126,6 +127,7 @@
       width: 100%;
       /* display: table; */
       border-bottom: 1px solid #555;
+      justify-content: space-between;
     }
 
     .nav-links:hover {
@@ -171,8 +173,7 @@
 
     .nav-item .nav-icon{
       display: block!important;
-      float:right;
-      margin-top: -50px;
+      /* margin-top: -50px; */
     }
   
     .navbar-logo {
