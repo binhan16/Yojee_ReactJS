@@ -1,9 +1,9 @@
 import React from 'react'
-import Amount from '../../Amount'
-import Chart from '../../Chart'
-import Featured from '../../Featured'
-import Carousel from '../../Carousel'
-import Form from '../../Form'
+import Amount from '../../modules/Amount'
+import Chart from '../../modules/Chart'
+import Featured from '../../modules/Featured'
+import Carousel from '../../modules/Carousel'
+import Form from '../../modules/Form'
 import { homeObjOne, homeObjTwo } from './Data'
 
 function Home() {

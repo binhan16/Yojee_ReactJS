@@ -1,6 +1,5 @@
 import React from "react";
-import "./Carousel.css";
-import { Button } from "./Button";
+import "../../style/Carousel.css";
 import { Link } from "react-router-dom";
 
 function Carousel() {

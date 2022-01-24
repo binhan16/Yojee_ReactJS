@@ -1,11 +1,11 @@
 import React from "react";
+import "../../assets/scss/bootstrap/_submenu.scss"
 import {
   Dropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-import "./Submenu.css";
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -16,22 +16,22 @@ export default class Example extends React.Component {
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
     this.state = {
-      dropdownOpen1: false,
+      dropdownOpen: false,
     };
   }
 
   toggle() {
     this.setState((prevState) => ({
-      dropdownOpen1: !prevState.dropdownOpen1,
+      dropdownOpen: !prevState.dropdownOpen,
     }));
   }
 
   onMouseEnter() {
-    this.setState({ dropdownOpen1: true });
+    this.setState({ dropdownOpen: true });
   }
 
   onMouseLeave() {
-    this.setState({ dropdownOpen1: false });
+    this.setState({ dropdownOpen: false });
   }
 
   render() {
@@ -41,7 +41,7 @@ export default class Example extends React.Component {
           className="sub-menu d-inline-block "
           onMouseOver={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
-          isOpen={this.state.dropdownOpen1}
+          isOpen={this.state.dropdownOpen}
           toggle={this.toggle}
         >
           <DropdownToggle className="btn-sub-menu">Features</DropdownToggle>

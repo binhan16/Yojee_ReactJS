@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './Featured.css'
+import "../../style/Featured.css";
 
 function Featured() {
     return (

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
 import Dropdown from './Dropdown'
-import "./Navbar.css";
+import Submenu from './Submenu'
+import "../../style/Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -39,30 +40,24 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="/oursoftware"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={handleClick}
               >
-                <Dropdown/>  
+                {click ? <Dropdown /> : <Submenu/>}
                 <FaChevronRight className="nav-icon d-none" />
               </Link>
-              
-              
             </li>
             <li className="nav-item">
               <Link
-                to="/industry"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Industry
                 <FaChevronRight className="nav-icon d-none" />
-              </Link>
-              
+              </Link> 
             </li>
             <li className="nav-item">
               <Link
-                to="/resources"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -79,7 +74,6 @@ function Navbar() {
           <ul className={click ? "nav-menu1 active" : "nav-menu1 "}>
             <li className="nav-item ">
               <Link
-                to="/oursoftware"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -88,7 +82,6 @@ function Navbar() {
             </li>
             <li className="nav-item ">
               <Link
-                to="/industry"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

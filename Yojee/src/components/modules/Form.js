@@ -1,5 +1,5 @@
 import React from "react";
-import "./Form.css";
+import "../../style/Form.css";
 import { useForm } from "react-hook-form";
 
 function Form() {

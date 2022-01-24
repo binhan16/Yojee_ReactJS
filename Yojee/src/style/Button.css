@@ -85,12 +85,6 @@
     color: #242424;
   }
   
-  .btn--wide:hover {
-    color: #fff;
-    background-color: #f00946;
-    transition: all 0.2s ease-out;
-  }
-  
   .btn-link {
     display: flex;
     justify-content: center;

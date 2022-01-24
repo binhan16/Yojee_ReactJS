@@ -1,7 +1,7 @@
 import React from "react";
-import "./Amount.css";
+import "../../style/Amount.css";
 import { Link } from "react-router-dom";
-import { Button } from "./Button.js";
+
 
 function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
   return (

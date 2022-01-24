@@ -1,0 +1,40 @@
+.sub-menu {
+  .btn-sub-menu {
+    position: relative;
+    color: #333333;
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    margin-left: -12px;
+    // padding: 0 80px;
+    width: max-content;
+    &:hover {
+      background-color: transparent;
+      color: #bb21ab;
+      font-weight: 600;
+    }
+  }
+  .sub-menu-body {
+    background: white;
+    top: -170px!important;
+    left: 240px!important;
+    padding: 40px 0 5px;
+    width: 607px;
+    h3{
+      margin-left: 40px;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      text-align: left;
+      margin-left: 30px;
+    }
+    .sub-menu-item {
+      margin-left: 40px;
+      &:hover {
+        color: #bb21ab;
+        font-weight: 400;
+      }
+    }
+  }
+}

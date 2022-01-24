@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import "./Chart.css";
+import "../../style/Chart.css";
 
 function Chart() {
   const [click, setClick] = useState(false);

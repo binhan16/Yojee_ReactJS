@@ -6,33 +6,33 @@ import {
   DropdownItem,
 } from "reactstrap";
 import Submenu from './Submenu';
-import "./Dropdown.css";
+import "../../assets/scss/bootstrap/_dropdown.scss";
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle1 = this.toggle1.bind(this);
+    this.toggle = this.toggle.bind(this);
 
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
     this.state = {
-      dropdownOpen1: false,
+      dropdownOpen: false,
     };
   }
 
-  toggle1() {
+  toggle() {
     this.setState((prevState) => ({
-      dropdownOpen1: !prevState.dropdownOpen1,
+      dropdownOpen: !prevState.dropdownOpen,
     }));
   }
 
   onMouseEnter() {
-    this.setState({ dropdownOpen1: true });
+    this.setState({ dropdownOpen: true });
   }
 
   onMouseLeave() {
-    this.setState({ dropdownOpen1: false });
+    this.setState({ dropdownOpen: false });
   }
 
   render() {
@@ -42,10 +42,10 @@ export default class Example extends React.Component {
           className="drop-down d-inline-block "
           onMouseOver={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
-          isOpen={this.state.dropdownOpen1}
-          toggle={this.toggle1}
+          isOpen={this.state.dropdownOpen}
+          toggle={this.toggle}
         >
-          <DropdownToggle className="btn-fix">Our Software</DropdownToggle>
+          <DropdownToggle className="btn-dropdown">Our Software</DropdownToggle>
           <DropdownMenu>
             <DropdownItem className="drop-down-item">
               Solving Challenges
