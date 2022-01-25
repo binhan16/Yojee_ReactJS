@@ -41,9 +41,9 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="nav-links"
-                onClick={handleClick}
+                onClick={closeMobileMenu}
               >
-                {click ? <Dropdown /> : <Submenu/>}
+                <Dropdown />
                 <FaChevronRight className="nav-icon d-none" />
               </Link>
             </li>

@@ -12,7 +12,7 @@ function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
           <h1>{headline}</h1>
           <p className="title">{description}</p>
           <div className="container ">
-            <ul className=" row text-align-center">
+            <ul className=" row">
               <li className=" col-md-4 ">
                 <Link to="/">
                   <button className="btn-amount">

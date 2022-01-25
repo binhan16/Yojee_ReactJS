@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 function Carousel() {
   return (
-
     <section className="carousel container">
       <div className="row">
         <div className="carousel-content col-12 col-sm-8 ">
@@ -17,22 +16,28 @@ function Carousel() {
           </div>
           <div className="carousel-button">
             <p>Chose your solutions:</p>
-            <ul className=" row flex-column flex-md-row" >
-                <li >
-                  <button className="btn-chose btn-1">
+            <ul className=" row flex-column flex-md-row list-unstyled">
+              <li>
+                <Link to="/solutions">
+                  <button className="btn-chose btn-1 mr-3">
                     <span>ALL-IN-ONE SAAS PLATFORM</span>
                   </button>
-                </li>
-                <li >
-                  <button className="btn-chose btn-2">
+                </Link>
+              </li>
+              <li>
+                <Link to="/solutions">
+                  <button className="btn-chose btn-2 mr-3">
                     <span>REDUCE COST</span>
                   </button>
-                </li>
-                <li >
-                  <button className='btn-chose btn-1'>
+                </Link>
+              </li>
+              <li>
+                <Link to="/solutions">
+                  <button className="btn-chose btn-1 mr-3">
                     <span>IMPROVE VISIBILITY</span>
                   </button>
-                </li>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

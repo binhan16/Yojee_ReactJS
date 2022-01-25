@@ -4,12 +4,12 @@ import Chart from '../../modules/Chart'
 import Featured from '../../modules/Featured'
 import Carousel from '../../modules/Carousel'
 import Form from '../../modules/Form'
-import { homeObjOne, homeObjTwo } from './Data'
+import { homeObjTwo } from './Data'
 
 function Home() {
     return (
         <>
-            <Carousel {...homeObjOne} />
+            <Carousel />
             <Featured />
             <Chart/>
             <Amount {...homeObjTwo} />

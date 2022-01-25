@@ -15,13 +15,13 @@
   
   .featured-pic img{
     width:120px;
-    filter: grayscale(100%);
+    filter: grayscale(100%)!important;
     margin: 0 10px;
   }
   
   .featured-pic img:hover{
     transform: scale(1.3);
-    filter: grayscale(0);
+    filter: grayscale(0)!important;
   }
 
   @media screen and (max-width:768px) {

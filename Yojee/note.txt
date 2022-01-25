@@ -1,5 +1,1 @@
-doc use Form with Yup libary:
-https://codesandbox.io/s/react-hook-form-v7-validationschema-rm35t?file=/src/index.js:133-156
-
-don't use Yup in react-hook-form:
-https://codesandbox.io/s/react-hook-form-apply-validation-q5m00?file=/src/index.js
+https://react-slick.neostack.com/docs/example/swipe-to-slide
