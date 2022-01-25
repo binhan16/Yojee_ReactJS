@@ -1,6 +1,6 @@
 .bookDemo{
     margin-bottom: 0px;
-    padding: 50px 0 120px 0;
+    padding: 50px 0 100px 0;
     text-align: center;
 
 }
@@ -23,6 +23,7 @@
   left: 0;
   position: sticky;
   z-index: 1;
+  margin-bottom: -4px;
 }
 
 .bookDemo-body{
@@ -35,20 +36,20 @@
     #7b1bac 81%,
     #741aac 100%
   );
-  padding: 100px 100px;
+  padding: 40px 0px;
 }
 
 .bookDemo-text{
-    /* position:absolute; */
     font-size: 25px;
     color:white;
-    /* text-align:left; */
 }
 
 .bookDemo-btn{
     color:#000;
     background-color: white;
-    border-radius: 10px;
-    padding: 10px 45px;
+    border-radius: 12px;
+    padding: 10px 50px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
