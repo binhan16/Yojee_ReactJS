@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../../../style/Tab.css";
-import {TabContent,TabPane,Row,Col} from "reactstrap";
+// import {TabContent,TabPane,Row,Col} from "reactstrap";
 // import Choose from "./Choose";
 // import { solution1,solution2,solution3 } from '../Data'
 // import classnames from "classnames";

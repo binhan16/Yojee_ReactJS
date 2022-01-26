@@ -59,7 +59,7 @@ function Footer() {
             <li class="pr-5">Term and Conditions</li>
           </ul>
 
-          <div className="social-icons">
+          <div className="social-icons ">
             <Link
               className="social-icon-link"
               to="/"
