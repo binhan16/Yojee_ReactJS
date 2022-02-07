@@ -65,6 +65,22 @@
     text-decoration: none;
   }
 
+  .nav-links .dropdown-toggle{
+    background: none!important;
+    border: none;
+    color: black!important;
+    margin-top: 22px;
+  }
+
+  .nav-links .dropdown-toggle:hover,
+  .nav-links .dropdown-toggle:active{
+    color:black;
+    border:none;
+  }
+
+  .nav-item .dropdown .show{
+    border: none !important;;
+  }
   
   .btn-demo{
     outline: none !important;
@@ -133,6 +149,8 @@
       color: #bb21ab;
       font-weight: 600;
     }
+
+    
 
     .nav-menu1 {
       display: flex;

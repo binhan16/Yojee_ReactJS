@@ -43,4 +43,5 @@ export default App;
  * 3. Check comment on 
  *    - index.js
  *    - assets/scss
+ *    - Chart.css : .chart-right .chart-icon
  */

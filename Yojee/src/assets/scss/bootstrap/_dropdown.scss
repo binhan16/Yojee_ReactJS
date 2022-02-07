@@ -47,6 +47,13 @@
 }
 
 
+// Customise Bootstrap 
+.dropdown-toggle {
+  &::after {
+    display: none;
+  }
+}
+
 /***
  * NAMING AS SCSS + BEM
  * BEM = Block__Element--Modifier

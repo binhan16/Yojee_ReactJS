@@ -5,13 +5,14 @@
 .carousel-text h1{
     color: #000000;
     font-family: "Montserrat-ExtraBold", "Arial", Sans-Serif;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 800;
     line-height: 82px;
 }
 
 .carousel-text p {
   color: rgb(133, 131, 131);
+  font-size: 20px;
 }
 
 .carousel-image img {

@@ -116,12 +116,12 @@ function Form() {
                   </div>
 
                   <div className="form-group">
-                  <label>Country</label>
-                  <select {...register("country")}>
-                    <option value="usa">USA</option>
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                  </select>
+                    <label>Country</label>
+                    <select {...register("country")} className="form-control">
+                      <option value="usa">USA</option>
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                    </select>
                   </div>
 
                   <button type="submit" className="btn-pink">
