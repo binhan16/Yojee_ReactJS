@@ -25,3 +25,22 @@ function App() {
 }
 
 export default App;
+
+
+/**
+ *** REVIEW NOTE
+ * 
+ * 1. Folder's name
+ *    components/modules      => modules/
+ *    components/pages/Footer => components/Footer
+ *    pages/Homepage          => ok
+ * 
+ * 2. CSS => SCSS 
+ *    bootstrap.min.css : replace (check /assets/scss/style.scss)
+ *    slick.min.css : ok, because not too much css need to restyle
+ *    slick-theme.min.css : optional, sometime don't use this file
+ * 
+ * 3. Check comment on 
+ *    - index.js
+ *    - assets/scss
+ */

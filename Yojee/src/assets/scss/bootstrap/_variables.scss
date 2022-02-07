@@ -1,0 +1,9 @@
+// Custom variables
+$lime : lime;
+$black_33 : #333333;
+
+// Override Boostrap variables at 
+// node_modules/bootstrap/scss/variables.scss
+$primary : #bb21ab;
+$body-bg: $primary;
+$body-color: $lime;

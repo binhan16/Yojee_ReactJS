@@ -1,7 +1,25 @@
+// override Bootstrap's variables
 @import 'bootstrap/variables';
+
+// must have : default Bootstrap
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins/';
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+
+// import Bootstrap components which are used
+@import '../../../node_modules/bootstrap/scss/grid';
+@import '../../../node_modules/bootstrap/scss/dropdown';
+
+// customise Bootstrap
 @import 'bootstrap/dropdown';
 @import 'bootstrap/submenu';
 
+//////////////////////////// THEME
+// general CSS, for all pages
 body {
-    background: red;
+    // background: $primary;
 }
+// css of each modules in each different pages is set in /components/

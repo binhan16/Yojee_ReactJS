@@ -1,3 +1,7 @@
+// unknown why have to add variables here
+// as usual, I don't add 
+@import '../bootstrap/variables';
+
 .drop-down {
     
     .btn-dropdown {
@@ -28,7 +32,7 @@
     padding: 60px 31px;
     box-shadow: inset 7px 0 9px -7px #00000029, 3px 2px 4px 0px;
     top: 80px;
-    left: -30px !important;;
+    left: -30px;
     .drop-down-item {
         font-size: 20px;
       margin-bottom: 20px;
@@ -38,6 +42,52 @@
         font-weight: 600;
         background-color: none;
       }
+    }
+  }
+}
+
+
+/***
+ * NAMING AS SCSS + BEM
+ * BEM = Block__Element--Modifier
+ */
+.dropdown {
+  &__btn { // built => .dropdown__btn
+    color: $black_33;
+    background-color: transparent;
+    border-color: none;
+    font-size: 1.2rem;
+    border: none;
+    &:hover,:active{
+        background-color: white;
+    }
+  }
+  &__menu { // built => .dropdown__menu
+    background: white
+      linear-gradient(
+        114deg,
+        rgba(46, 49, 145, 0.05) 0%,
+        rgba(81, 44, 151, 0.05) 28%,
+        rgba(172, 34, 168, 0.05) 91%,
+        rgba(187, 33, 171, 0.05) 100%
+      )
+      0% 0% no-repeat padding-box; // can use as linear-gradient(114deg, $color_1 0%, $color_2 28%, $color_3 91%, $color_4 100%)
+    padding: 60px 31px;
+    box-shadow: inset 7px 0 9px -7px #00000029, 3px 2px 4px 0px; // rgba(#000, .29)
+    top: 80px;
+    left: -30px !important;;
+  }
+  &__item { // built => .dropdown__item // old will be built to : .drop-down .dropdown-menu .drop-down-item => 3 level, more difficult for override
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    &:hover {
+      color: $primary;
+      font-weight: 600;
+      background-color: none;
+    }
+    &--active { // built => .dropdown__item--active
+      color: darken($primary, 5%);
     }
   }
 }
