@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
-import Dropdown from './Dropdown'
-import Submenu from './Submenu'
+import {Dropdown} from "react-bootstrap";
+// import Submenu from './Submenu'
 import "../../style/Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  // const handleOpenSubMenu=()=>{
+  //   if(!<Dropdown/>){
+  //     setClick()
+  //   }
+  // };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -38,55 +42,56 @@ function Navbar() {
             {click ? <FaTimes /> : <FaBars />}
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className="nav-links"
-                onClick={closeMobileMenu}
+                
               >
                 <Dropdown />
                 <FaChevronRight className="nav-icon d-none" />
               </Link>
-            </li>
+            </li> */}
+
             <li className="nav-item">
-              <Link
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Dropdown>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  <Dropdown.Toggle>Our Software</Dropdown.Toggle>
+                </Link>
+                <FaChevronRight className="nav-icon d-none" />
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="/solvingchallenges">
+                    Solving Challenges
+                  </Dropdown.Item>
+                  <Dropdown.Item href="/features">Features</Dropdown.Item>
+                  <Dropdown.Item href="/pricing">Pricing</Dropdown.Item>
+                  <Dropdown.Item href="#/api">API</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-links">
                 Industry
                 <FaChevronRight className="nav-icon d-none" />
-              </Link> 
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Resources
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              <Link className="nav-links">Resources</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-links">
                 About
               </Link>
             </li>
           </ul>
 
-          <ul className={click ? "nav-menu1 active" : "nav-menu1 "}>
+          <ul className={click ? "nav-menu-bottom active" : "nav-menu-bottom "}>
             <li className="nav-item ">
-              <Link
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
+              <Link className="nav-links">Contact</Link>
             </li>
             <li className="nav-item ">
-              <Link
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Send SG
-              </Link>
+              <Link className="nav-links">Send SG</Link>
             </li>
             <div className="nav-btn ">
               {button ? (

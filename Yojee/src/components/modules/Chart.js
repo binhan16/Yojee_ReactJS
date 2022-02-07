@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import "../../style/Chart.css";
+import './../../assets/scss/bootstrap/_chart.scss';
 
 function Chart() {
   const [click, setClick] = useState(false);
@@ -23,7 +23,7 @@ function Chart() {
         </p>
         <div className="container ">
           <div className="row">
-            <div id="picture" className="chart-left col-sm-7 col-12">
+            <div id="picture" className="chart__left col-sm-7 col-12">
               <Slider {...settings}>
                 <div>
                   <img src="./image/chart.png" />
@@ -50,8 +50,8 @@ function Chart() {
                 <br /> your customers informed and dramatically reduces customer{" "}
               </p>
             </div>
-            <div className="chart-right col-sm-5 col-12">
-              <div className="chart-item ">
+            <div className="chart__right col-sm-5 col-12">
+              <div className="chart__right--item ">
                 <div className="chart-text ">
                   <div className="chart-icon">
                     <img src="./image/slick01.png" />
@@ -61,7 +61,7 @@ function Chart() {
                   </div>
                 </div>
               </div>
-              <div className="chart-item ">
+              <div className="chart__right--item ">
                 <div className="chart-text ">
                   <div className="chart-icon">
                     <img src="./image/slick02.png" />
@@ -71,7 +71,7 @@ function Chart() {
                   </div>
                 </div>
               </div>
-              <div className="chart-item ">
+              <div className="chart__right--item ">
                 <div className="chart-text">
                   <div className="chart-icon">
                     <img src="./image/slick03.png" />
@@ -81,7 +81,7 @@ function Chart() {
                   </div>
                 </div>
               </div>
-              <div className="chart-item ">
+              <div className="chart__right--item ">
                 <div className="chart-text">
                   <div className="chart-icon">
                     <img src="./image/slick04.png" />
@@ -91,7 +91,7 @@ function Chart() {
                   </div>
                 </div>
               </div>
-              <div className="chart-item ">
+              <div className="chart__right--item ">
                 <div className="chart-text">
                   <div className="chart-icon">
                     <img src="./image/slick05.png" />
@@ -101,7 +101,7 @@ function Chart() {
                   </div>
                 </div>
               </div>
-              <div className="chart-item ">
+              <div className="chart__right--item ">
                 <div className="chart-text">
                   <div className="chart-icon">
                     <img src="./image/slick06.png" />

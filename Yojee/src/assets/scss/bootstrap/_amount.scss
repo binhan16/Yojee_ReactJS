@@ -1,0 +1,75 @@
+@import "../bootstrap/variables";
+
+.amount {
+  margin-top: -81px;
+  background-image: linear-gradient(
+    268deg,
+    #ae20ab 0%,
+    #bb21ab 17%,
+    #7b1bac 81%,
+    #741aac 100%
+  );
+  background-attachment: fixed;
+
+  .top-background {
+    padding-top: 5vw;
+  }
+
+  .bottom-background {
+    padding-bottom: 5vw;
+  }
+
+  &__body {
+    h1 {
+      text-align: center;
+      color: $white;
+      font-weight: 800;
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+    .title {
+      text-align: center;
+      color: $white;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    ul {
+      align-items: center;
+      padding: 20px 0;
+      li {
+        height: auto;
+        list-style: none;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &__circle {
+    width: 330px;
+    height: 330px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid $white;
+    display: flex;
+    &--text {
+      color: $white;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 36px;
+    }
+  }
+  &__descript {
+    text-align: center;
+    color: white;
+    font-family: "MaaxRoundedTrial", "Arial", Sans-Serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 40px 0px 0px 0px;
+    padding: 0 30px;
+  }
+}

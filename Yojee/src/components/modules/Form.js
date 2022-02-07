@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/Form.css";
+import './../../assets/scss/bootstrap/_form.scss';
 import { useForm } from "react-hook-form";
 
 function Form() {
@@ -15,7 +15,7 @@ function Form() {
   return (
     <>
       <section className="form">
-        <div className="form-register">
+        <div className="form__register">
           <h1 className="form-heading">Ready For The Free Trial</h1>
           <p className="form-decript">
             See for yourself just how much money and time Yojee will save you
@@ -23,12 +23,12 @@ function Form() {
           </p>
           <div className="container mt-2">
             <div className="row">
-              <div className="form-card col-12 col-sm-6">
+              <div className="form__card col-12 col-sm-6">
                 <img src="./image/Freight quote request.png" />
               </div>
               <div className="form-input col-12 col-sm-6">
                 <form onSubmit={handleSubmit(onSubmit)}>
-                  <div className="form-group">
+                  <div className="form__group">
                     <label>First Name</label>
                     <input
                       placeholder="Your name..."
@@ -50,7 +50,7 @@ function Form() {
                     )}
                   </div>
 
-                 <div className="form-group">
+                 <div className="form__group">
                  <label>Last Name</label>
                   <input
                     placeholder="Your last name..."
@@ -71,7 +71,7 @@ function Form() {
                   )}
                  </div>
                     <br />
-                  <div className="form-group">
+                  <div className="form__group">
                   <label>Contact Number</label>
                   <input
                     placeholder="Your contact number..."
@@ -88,7 +88,7 @@ function Form() {
                   )}
                   </div>
 
-                  <div className="form-group">
+                  <div className="form__group">
                   <label>Company</label>
                   <input
                     placeholder="Your company..."
@@ -99,7 +99,7 @@ function Form() {
                   )}
                   </div>
 
-                  <div className="form-group">
+                  <div className="form__group">
                   <label>Email</label>
                   <input
                     placeholder="Your email..."
@@ -115,7 +115,7 @@ function Form() {
                   {errors?.email?.type === "pattern" && <p>Email invalidate</p>}
                   </div>
 
-                  <div className="form-group">
+                  <div className="form__group">
                   <label>Country</label>
                   <select {...register("country")}>
                     <option value="usa">USA</option>
@@ -142,7 +142,7 @@ export default Form;
 
 {
   /* <form>
-                  <div className="form-group">
+                  <div className="form__group">
                     <label>First Name</label>
                     <input
                       type="text"

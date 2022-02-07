@@ -1,0 +1,93 @@
+@import "../bootstrap/variables";
+
+.chart {
+  padding-top: 30px;
+  background-color: #fff7fe;
+  width: 100%;
+  padding-bottom: 80px;
+  &::after {
+    margin-top: 50px;
+    background-image: linear-gradient(
+      268deg,
+      #ae20ab 0%,
+      #bb21ab 17%,
+      #7b1bac 81%,
+      #741aac 100%
+    );
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 98%);
+    bottom: -43.8vh;
+    content: "";
+    height: 10vw;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    background-attachment: fixed;
+    left: 0;
+    position: sticky;
+    z-index: 1;
+  }
+  p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+  &__left {
+    img {
+      max-width: 750px;
+      width: 100%;
+      height: 370px;
+      padding-bottom: 20px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      text-align: left;
+      padding: 0 50px;
+    }
+  }
+
+  &__right{
+      &--item{
+        width: 100%;
+        padding: 20px 0;
+        margin-left: 40px;
+      }
+  }
+  .chart-text{
+    display: flex;
+    align-items: center;
+    color: $black_0;
+    font-weight: 400;
+    padding-bottom: 25px;
+    &:hover{
+        cursor: pointer;
+        color: $pink;
+    }
+  }
+  .chart-icon{
+      img{
+        width: 40px;
+        height: 50px;
+        filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0);
+        }
+      }
+  }
+  .chart-content {
+      p{
+        padding-left: 40px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+  }
+  .btn-find{
+      display: none;
+  }
+}

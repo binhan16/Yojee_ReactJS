@@ -1,0 +1,97 @@
+@import "../bootstrap/variables";
+
+.form {
+  position: relative;
+  height: auto;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background: #fff7fe;
+
+  &::before {
+    clip-path: polygon(0 0, 0 95%, 100% 2%, 100% 0%);
+    top: -1px;
+    background-image: linear-gradient(
+      268deg,
+      #ae20ab 0%,
+      #bb21ab 17%,
+      #7b1bac 81%,
+      #741aac 100%
+    );
+    content: "";
+    height: 10vw;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    background-attachment: fixed;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__register {
+    h1 {
+      font-weight: 800;
+      font-size: 50px;
+      text-align: center;
+    }
+    p {
+      font-weight: 600;
+      text-align: center;
+      color: rgb(133, 131, 131);
+    }
+  }
+
+  &__card {
+    img {
+      max-width: 616px;
+      width: 100%;
+      height: 516px;
+    }
+  }
+
+  form {
+    padding: 0 100px;
+    max-width: 500px;
+    position: relative;
+    p {
+      color: $err;
+      &::before {
+        display: inline;
+        content: "⚠";
+      }
+    }
+    .form__group {
+      margin-bottom: 20px;
+      input,
+      select {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid $white;
+        padding: 10px 30px;
+        font-size: 14px;
+      }
+    }
+    .btn-pink {
+      background: $pink;
+      color: $white;
+      width: 100%;
+      outline: $black_0;
+      margin-top: 40px;
+      padding: 20px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+    }
+
+    .label {
+      line-height: 2;
+      text-align: left;
+      display: block;
+      color: $black_0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

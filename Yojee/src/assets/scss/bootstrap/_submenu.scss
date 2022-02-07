@@ -1,12 +1,13 @@
 .sub-menu {
-  .btn-sub-menu {
+  .btn-sub-menu{
     position: relative;
     color: #333333;
     border: none;
     font-size: 1.2rem;
     background-color: transparent;
     margin-left: -12px;
-    // padding: 0 80px;
+    // padding:0 -12px 0 20px;
+    max-width: 100%;
     width: max-content;
     &:hover {
       background-color: transparent;
@@ -16,7 +17,7 @@
   }
   .sub-menu-body {
     background: white;
-    top: -165px!important;
+    top: -167px!important;
     left: 240px!important;
     padding: 20px 0 90px 0;
     width: 607px;

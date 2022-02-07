@@ -36,7 +36,7 @@
     text-align: center;
   }
   
-  .nav-menu1 {
+  .nav-menu-bottom {
     display: flex;
     list-style: none;
     text-align: center;
@@ -133,7 +133,7 @@
       font-weight: 600;
     }
 
-    .nav-menu1 {
+    .nav-menu-bottom {
       display: flex;
       flex-direction: column-reverse;
       width: 100%;
@@ -146,7 +146,7 @@
       
     }
   
-    .nav-menu1.active {
+    .nav-menu-bottom.active {
       background: #4D4D4D;
       left: 0;
       opacity: 1;
@@ -156,7 +156,7 @@
   
     
 
-    .nav-menu1 .nav-item{
+    .nav-menu-bottom .nav-item{
       border-bottom: none;
       max-width:max-content;
       width: 100%;
