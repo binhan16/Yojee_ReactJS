@@ -26,8 +26,9 @@
     height:auto;
   }
   
-  .navbar-icon {
+  .nav-icon {
     margin-right: 0.5rem;
+    display:none;
   }
   
   .nav-menu {
@@ -79,12 +80,6 @@
     transition: all .3s;
     font-size: 18px !important;
     margin-top: 15px;
-  }
-
-  
-
-  .fa-bars {
-    color: #fff;
   }
   
   .menu-icon {

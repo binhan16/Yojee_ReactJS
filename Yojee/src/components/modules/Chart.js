@@ -17,7 +17,7 @@ function Chart() {
   return (
     <>
       <div className="chart">
-        <p>
+        <p className="chart__heading">
           Automate your operations with delivery
           <br /> management software
         </p>
@@ -116,7 +116,7 @@ function Chart() {
         </div>
         <br />
         <Link to="/" onClick={closeMobileMenu}>
-          <button className="btn-find">FIND OUT MORE</button>
+          <button className="btn__find">FIND OUT MORE</button>
         </Link>
       </div>
     </>

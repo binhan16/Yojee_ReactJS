@@ -52,42 +52,92 @@
     }
   }
 
-  &__right{
-      &--item{
-        width: 100%;
-        padding: 20px 0;
-        margin-left: 40px;
-      }
+  &__right {
+    &--item {
+      width: 100%;
+      padding: 20px 0;
+      margin-left: 40px;
+    }
   }
-  .chart-text{
+  .chart-text {
     display: flex;
     align-items: center;
     color: $black_0;
     font-weight: 400;
     padding-bottom: 25px;
-    &:hover{
-        cursor: pointer;
-        color: $pink;
+    &:hover {
+      cursor: pointer;
+      color: $pink;
     }
   }
-  .chart-icon{
-      img{
-        width: 40px;
-        height: 50px;
-        filter: grayscale(100%);
-        &:hover{
-            filter: grayscale(0);
-        }
+  .chart-icon {
+    img {
+      width: 40px;
+      height: 50px;
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0);
       }
+    }
   }
   .chart-content {
-      p{
-        padding-left: 40px;
-        font-size: 16px;
-        font-weight: 400;
-      }
+    p {
+      padding-left: 40px;
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
-  .btn-find{
-      display: none;
+  .btn__find {
+    display: none;
+  }
+
+  @media screen and(max-width: 768px) {
+    .chart {
+      &__heading {
+        padding: 0 20px;
+        font-size: 30px;
+        font-weight: 800;
+      }
+
+      &__left {
+        text-align: center;
+        p {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+
+      &__right {
+        display: flex;
+        text-align: center;
+
+        .chart-text,.chart-icon{
+          text-align: center;
+        }
+
+        .chart-icon img{
+          max-width:30px;
+          margin-left: -20px;
+        }
+
+        .chart-content{
+          display: none;
+        }
+      }
+
+      .btn__find {
+        display: block!important;
+        justify-content: center;
+        align-items: center;
+        background-color: $pink;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        padding: 10px 40px;
+        border: none;
+        border-radius: 10px;
+        margin: 0 120px;
+      }
+    }
   }
 }

@@ -16,7 +16,7 @@ function Carousel() {
           </div>
           <div className="carousel__button">
             <p>Chose your solutions:</p>
-            <ul className=" row flex-column flex-md-row list-unstyled">
+            <ul className=" row    list-unstyled">
               <li>
                 <Link to="/solutions">
                   <button className="btn__chose btn-1 mr-3">

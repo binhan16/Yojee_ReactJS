@@ -1,0 +1,77 @@
+@import "../bootstrap/variables";
+
+.tab {
+  position: fixed;
+  width: 1130px;
+  left: 387px;
+  top: 130px;
+  z-index: 100;
+
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 0 0 33.3333%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    height: 39px;
+    width: calc(100% - 40px);
+    border: 1px solid $pink;
+    background-color: $white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $pink;
+    font-weight: 700;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__btn--active {
+    height: 39px;
+    width: calc(100% - 40px);
+    border: 1px solid $pink;
+    background-color: $pink;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-weight: 700;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px;
+  }
+
+
+  
+
+  &__btn::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    border: 10px solid $black_33;
+    border-top-color: transparent;
+    left: 0;
+    transform: translateX(-100%);
+    border-left-color: transparent;
+  }
+
+  &__btn::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    border: 10px solid $black_33;
+    border-top-color: transparent;
+    right: 0;
+    transform: translateX(100%);
+    border-right-color: transparent;
+  }
+}

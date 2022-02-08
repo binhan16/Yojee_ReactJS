@@ -71,5 +71,33 @@
     }
   }
 
-  
+  @media screen and(max-width:768px) {
+    .carousel {
+      &__text {
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 18px;
+          text-align: center;
+          padding: 0 30px;
+        }
+      }
+
+      &__button {
+        text-align: center;
+
+        .btn__chose {
+          width: 400px;
+          margin: 10px 40px;
+        }
+      }
+
+      &__image{
+        text-align: center;
+      }
+    }
+  }
 }

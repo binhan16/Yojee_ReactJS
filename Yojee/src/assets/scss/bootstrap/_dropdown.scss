@@ -1,6 +1,6 @@
 @import "../bootstrap/variables";
 
-.drop-down {
+.dropdown {
   &__btn {
     color: $black_33;
     background-color: transparent;
@@ -24,5 +24,32 @@
         rgba(187, 33, 171, 0.05) 100%
       )
       0% 0% no-repeat padding-box;
+      padding: 60px 31px;
+      box-shadow: inset 7px 0 9px -7px #00000029, 3px 2px 4px 0px; // rgba(#000, .29)
+      // top: 70px;
+      // left: 0px ;
+
   }
+
+  &__item{
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    &:hover {
+      color: $pink!important;
+      font-weight: 600;
+      
+    }
+    &:active{
+      background-color:none;
+      color: $pink;
+    }
+  }
+
+  &-item{
+&:hover{
+  background-color:  none!important;
+}
+  }
+
 }

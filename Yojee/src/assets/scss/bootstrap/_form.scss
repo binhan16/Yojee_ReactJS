@@ -73,7 +73,7 @@
         font-size: 14px;
       }
     }
-    .btn-pink {
+    .btn__pink {
       background: $pink;
       color: $white;
       width: 100%;
@@ -92,6 +92,41 @@
       color: $black_0;
       font-size: 18px;
       font-weight: 600;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .form {
+      &__heading {
+        font-size: 30px;
+        padding: 0 5px;
+      }
+      &__descript {
+        text-align: center;
+        padding: 0 50px;
+      }
+
+      &__card {
+        text-align: center;
+        img {
+          max-width: 300px;
+          height: 300px;
+        }
+      }
+
+      &__input{
+        margin-top: 40px;
+        form{
+          padding: 20px;
+        }
+      }
+
+      &__group{
+        label{
+          // float:left;
+        padding-left: 20px;
+        }
+      }
     }
   }
 }

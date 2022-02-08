@@ -21,4 +21,17 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .featured{
+      &__items{
+        display: inline-block;
+        img{
+          margin: 10px 0;
+          width: 65px;
+        }
+      }
+    }
+  }
+  
 }

@@ -1,0 +1,55 @@
+@import "../bootstrap/variables";
+
+.bookDemo {
+  margin-bottom: 0px;
+  padding: 50px 0 100px 0;
+  text-align: center;
+
+  &::before {
+    background-image: linear-gradient(
+      268deg,
+      #ae20ab 0%,
+      #bb21ab 17%,
+      #7b1bac 81%,
+      #741aac 100%
+    );
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 98%);
+    content: "";
+    height: 10vw;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    background-attachment: fixed;
+    left: 0;
+    position: sticky;
+    z-index: 1;
+    margin-bottom: -4px;
+  }
+
+  &__body {
+    position: relative;
+    margin-bottom: -120px;
+    background-image: linear-gradient(
+      268deg,
+      #ae20ab 0%,
+      #bb21ab 17%,
+      #7b1bac 81%,
+      #741aac 100%
+    );
+    padding: 40px 0px;
+  }
+
+  &__text{
+    font-size: 25px;
+    color:$white;
+  }
+
+  &__btn{
+    color:$black_0;
+    background-color: $white;
+    border-radius: 12px;
+    padding: 10px 50px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

@@ -13,6 +13,7 @@
 @import '../../../node_modules/bootstrap/scss/forms';
 
 // customise Bootstrap
+@import 'bootstrap/navbar';
 @import 'bootstrap/dropdown';
 @import 'bootstrap/submenu';
 @import 'bootstrap/carousel';
@@ -20,4 +21,9 @@
 @import 'bootstrap/chart';
 @import 'bootstrap/amount';
 @import 'bootstrap/form';
-@import 'bootstrap/footer'
+@import 'bootstrap/footer';
+
+//detail page
+@import 'bootstrap/tab';
+@import 'bootstrap/choose';
+@import 'bootstrap/bookDemo';
