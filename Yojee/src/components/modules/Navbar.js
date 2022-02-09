@@ -46,7 +46,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="nav-links"
-                
+                to="/oursoftware"
               >
                 <Dropdown />
                 <FaChevronRight className="nav-icon d-none" />
@@ -55,7 +55,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="nav-links"
-                
+                to="/industry"
               >
                 Industry
                 <FaChevronRight className="nav-icon d-none" />
@@ -64,7 +64,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="nav-links"
-                
+                to="/resources"
               >
                 Resources
               </Link>
@@ -77,7 +77,7 @@ function Navbar() {
           </ul>
 
           <ul className={click ? "nav-menu-bottom active" : "nav-menu-bottom "}>
-            <li className="nav-item ">
+          <li className="nav-item ">
               <Link
                 className="nav-links"
                 
@@ -88,7 +88,6 @@ function Navbar() {
             <li className="nav-item ">
               <Link
                 className="nav-links"
-                
               >
                 Send SG
               </Link>

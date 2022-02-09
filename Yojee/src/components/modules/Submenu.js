@@ -14,7 +14,6 @@ export default class Example extends React.Component {
     this.toggle = this.toggle.bind(this);
 
     this.onMouseEnter = this.onMouseEnter.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
     this.state = {
       dropdownOpen: false,
     };
@@ -30,9 +29,6 @@ export default class Example extends React.Component {
     this.setState({ dropdownOpen: true });
   }
 
-  onMouseLeave() {
-    this.setState({ dropdownOpen: false });
-  }
 
   render() {
     return (
@@ -40,7 +36,6 @@ export default class Example extends React.Component {
         <Dropdown
           className="sub-menu d-inline-block "
           onMouseOver={this.onMouseEnter}
-          onMouseLeave={this.onMouseLeave}
           isOpen={this.state.dropdownOpen}
           toggle={this.toggle}
         >

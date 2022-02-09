@@ -125,8 +125,13 @@
         }
       }
 
+      
+    }
+
+    a{
       .btn__find {
-        display: block!important;
+        display: block;
+        
         justify-content: center;
         align-items: center;
         background-color: $pink;
@@ -137,6 +142,9 @@
         border: none;
         border-radius: 10px;
         margin: 0 120px;
+      }
+      &:hover{
+        text-decoration: none;
       }
     }
   }

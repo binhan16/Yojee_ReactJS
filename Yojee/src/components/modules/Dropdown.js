@@ -41,7 +41,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Dropdown
-          className="dropdown d-inline-block "
+          className="dropdown d-inline-block"
           onMouseOver={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
           isOpen={this.state.dropdownOpen}

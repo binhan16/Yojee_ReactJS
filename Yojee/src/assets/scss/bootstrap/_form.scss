@@ -85,14 +85,16 @@
       border: none;
     }
 
-    .label {
+    .form__name{
       line-height: 2;
       text-align: left;
       display: block;
       color: $black_0;
       font-size: 18px;
       font-weight: 600;
+      color: rgb(133, 131, 131);
     }
+
   }
 
   @media screen and (max-width: 768px) {
@@ -122,8 +124,7 @@
       }
 
       &__group{
-        label{
-          // float:left;
+        .form__name{
         padding-left: 20px;
         }
       }

@@ -54,9 +54,9 @@ function Footer() {
       <section className="social-media ">
         <div className="social-media-wrap ">
           <ul class="list-unstyled">
-            <li class="pr-5">Copyright 2021 Yojee</li>
-            <li class="pr-5">Privacy Policy</li>
-            <li class="pr-5">Term and Conditions</li>
+            <li >Copyright 2021 Yojee</li>
+            <li >Privacy Policy</li>
+            <li >Term and Conditions</li>
           </ul>
 
           <div className="social-icons ">
@@ -86,7 +86,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link"
-              to="/"
+              href="https://www.instagram.com/yojeesolutions/"
               target="_blank"
               aria-label="Instagram"
             >

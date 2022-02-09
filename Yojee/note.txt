@@ -1,1 +1,0 @@
-https://react-slick.neostack.com/docs/example/swipe-to-slide

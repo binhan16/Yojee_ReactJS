@@ -36,7 +36,7 @@
     margin-bottom: 20px;
     background-color: transparent;
     &:hover {
-      color: $pink!important;
+      color: $pink;
       font-weight: 600;
       
     }
@@ -48,7 +48,7 @@
 
   &-item{
 &:hover{
-  background-color:  none!important;
+  background-color:  none;
 }
   }
 

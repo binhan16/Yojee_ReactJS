@@ -29,7 +29,7 @@ function Form() {
               <div className="form__input col-12 col-sm-6">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="form__group">
-                    <label>First Name</label>
+                    <label className="form__name">First Name</label>
                     <input
                       placeholder="Your name..."
                       {...register("firstName", {
@@ -51,7 +51,7 @@ function Form() {
                   </div>
 
                   <div className="form__group">
-                    <label>Last Name</label>
+                    <label className="form__name">Last Name</label>
                     <input
                       placeholder="Your last name..."
                       {...register("lastName", {
@@ -72,7 +72,7 @@ function Form() {
                   </div>
                   <br />
                   <div className="form__group">
-                    <label>Contact Number</label>
+                    <label className="form__name">Contact Number</label>
                     <input
                       placeholder="Your contact number..."
                       {...register("contactNumber", {
@@ -89,7 +89,7 @@ function Form() {
                   </div>
 
                   <div className="form__group">
-                    <label>Company</label>
+                    <label className="form__name">Company</label>
                     <input
                       placeholder="Your company..."
                       {...register("company", { required: true })}
@@ -100,7 +100,7 @@ function Form() {
                   </div>
 
                   <div className="form__group">
-                    <label>Email</label>
+                    <label className="form__name">Email</label>
                     <input
                       placeholder="Your email..."
                       {...register("email", {
@@ -118,7 +118,7 @@ function Form() {
                   </div>
 
                   <div className="form__group">
-                    <label>Country</label>
+                    <label className="form__name">Country</label>
                     <select {...register("country")} >
                       <option value="usa">USA</option>
                       <option value="australia">Australia</option>
