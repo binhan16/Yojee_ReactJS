@@ -10,7 +10,7 @@ function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
           <h1>{headline}</h1>
           <p className="title">{description}</p>
           <div className="container">
-            <ul className="row">
+            <ul className="row align-items-start">
               <li className=" col-md-4 ">
                 <div className="amount__circle">
                   <h3 className="amount__circle--text">

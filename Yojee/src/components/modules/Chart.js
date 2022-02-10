@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./../../assets/scss/bootstrap/_chart.scss";
 
 export default class Chart extends Component {
-
   state = {
     imgActive: "./image/chart.png",
   };
@@ -36,11 +35,10 @@ export default class Chart extends Component {
               <div id="picture" className="chart__left col-sm-7 col-12">
                 <img src={this.state.imgActive} />
                 <br />
-                <p >
+                <p>
                   Get real-time ETA based on the drivers location while keeping{" "}
                   <br /> your customers informed and dramatically reduces
                   customer{" "}
-                  
                 </p>
               </div>
               <div className="chart__right col-sm-5 col-12">
@@ -120,9 +118,9 @@ export default class Chart extends Component {
             </div>
           </div>
           <br />
-          <Link to="/"  >
+          <div className="btn ">
             <button className="btn__find">FIND OUT MORE</button>
-          </Link>
+          </div>
         </div>
       </>
     );
