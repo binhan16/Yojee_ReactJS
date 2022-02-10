@@ -32,6 +32,24 @@ function Navbar() {
 
   window.addEventListener("resize", showButton);
 
+  // Thường c mà làm thì c sẽ tạo 1 json cho menu giống giống json dưới này, còn return chỉ là html structure thôi
+  // [
+  //   {
+  //     href: "./",
+  //     name: "abc",
+  //     text: "Abc",
+  //     iconName: "abc_icon",
+  //     children: [
+  //       {
+  //         href: "./",
+  //         name: "abc-child-1",
+  //         text: "Abc child ",
+  //         iconName: "abc_child_1icon",
+  //       }
+  //     ]
+  //   }  
+  // ]
+
   return (
     <>
       <div className="navbar-main ">
@@ -77,7 +95,7 @@ function Navbar() {
           </ul>
 
           <ul className={click ? "nav-menu-bottom active" : "nav-menu-bottom "}>
-          <li className="nav-item ">
+            <li className="nav-item ">
               <Link
                 className="nav-links"
                 
