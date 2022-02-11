@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronRight } from "react-icons/fa";
 import Dropdown from "./Dropdown";
-import Submenu from "./Submenu";
+import SubNav from "./SubNav";
+// import Submenu from "./Submenu";
 import "../../style/Navbar.css";
 
 function Navbar() {
@@ -25,8 +26,8 @@ function Navbar() {
     }
   };
 
-  const [subnav,setSubnav]= useState(false);
-  const showSubMenu= () =>setSubnav(!subnav);
+  const [subnav, setSubnav] = useState(false);
+  const showSubMenu = () => setSubnav(!subnav);
 
   useEffect(() => {
     showButton();
@@ -46,11 +47,18 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link className="nav-links" to="/oursoftware" onClick={showSubMenu}>
-                {subnav  ? <Dropdown/> : <Submenu/>}
-                <FaChevronRight className="nav-icon d-none" />
+              <Link
+                className="nav-links"
+                to="/oursoftware"
+                onClick={showSubMenu}
+              >
+                {subnav ? <SubNav /> : <Dropdown />}
+                <FaChevronRight className="nav-icon d-none"/>
+                <ul className={subnav ? <SubNav /> : <Dropdown />}></ul>
               </Link>
+              
             </li>
+            
             <li className="nav-item">
               <Link className="nav-links" to="/industry">
                 Industry
