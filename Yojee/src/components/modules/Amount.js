@@ -1,5 +1,5 @@
 import React from "react";
-import './../../assets/scss/bootstrap/_amount.scss';
+import "./../../assets/scss/layout/_amount.scss";
 
 function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
   return (
@@ -7,8 +7,8 @@ function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
       <div className="amount">
         <div className="top-background" />
         <div className="amount__body">
-          <h1>{headline}</h1>
-          <p className="title">{description}</p>
+          <h2 className="amount__body--heading">{headline}</h2>
+          <p className="amount__body--title">{description}</p>
           <div className="container">
             <ul className="row align-items-start">
               <li className=" col-md-4 ">
@@ -18,10 +18,7 @@ function Amount({ headline, description, buttonLabel2, buttonLabel3, p2, p3 }) {
                   </h3>
                 </div>
                 <div className="amount__descript">
-                  <p>
-                    Top logistics providers <br /> powered by Yojee <br />
-                    technolog
-                  </p>
+                  <p>Top logistics providers powered by Yojee technolog</p>
                 </div>
               </li>
               <li className=" col-md-4 ">

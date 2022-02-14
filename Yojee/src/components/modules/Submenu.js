@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/scss/bootstrap/_submenu.scss"
+import "../../assets/scss/layout/_submenu.scss";
 import {
   Dropdown,
   DropdownToggle,
@@ -28,7 +28,6 @@ export default class Submenu extends React.Component {
   onMouseEnter() {
     this.setState({ dropdownOpen: true });
   }
-
 
   render() {
     return (

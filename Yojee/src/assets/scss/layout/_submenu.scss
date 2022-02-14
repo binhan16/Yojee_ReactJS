@@ -1,9 +1,9 @@
 .sub-menu {
-  .btn-sub-menu{
+  .btn-sub-menu {
     position: relative;
     color: #333333;
     border: none;
-    font-size: 1.2rem;
+    font-size: 16px;
     background-color: transparent;
     max-width: 100%;
     width: max-content;
@@ -16,26 +16,27 @@
   .sub-menu-body {
     background: white;
     box-shadow: inset 7px 0 9px -7px #00000029, 3px 2px 4px 0px;
-    top: -157px!important;
-    left: 225px!important;
-    padding: 8px 0 90px 0;
+    top: -155px !important;
+    left: 225px !important;
+    padding: 45px 0 50px;
     width: 607px;
-    h3{
+    h3 {
       margin-left: 40px;
     }
     p {
       color: #555;
       font-size: 18px;
       text-align: left;
-      margin-left: 30px;
+      margin-left: 40px;
       padding-bottom: 10px;
     }
     .sub-menu-item {
       margin-left: 40px;
+
       &:hover {
         color: #bb21ab;
         font-weight: 400;
-        background-color:transparent;
+        background-color: transparent;
       }
     }
   }

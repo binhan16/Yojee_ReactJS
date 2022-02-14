@@ -16,8 +16,8 @@ function Form() {
     <>
       <section className="form">
         <div className="form__register">
-          <h1 className="form__heading">Ready For The Free Trial</h1>
-          <p className="form__decript">
+          <h2 className="form__register--heading">Ready For The Free Trial</h2>
+          <p className="form__register--descript">
             See for yourself just how much money and time Yojee will save you
             and your team
           </p>
@@ -119,7 +119,7 @@ function Form() {
 
                   <div className="form__group">
                     <label className="form__name">Country</label>
-                    <select {...register("country")} >
+                    <select {...register("country")}>
                       <option value="usa">USA</option>
                       <option value="australia">Australia</option>
                       <option value="canada">Canada</option>

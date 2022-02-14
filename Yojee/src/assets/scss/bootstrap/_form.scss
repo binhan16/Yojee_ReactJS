@@ -1,4 +1,4 @@
-@import "../bootstrap/variables";
+@import "./variables";
 
 .form {
   position: relative;
@@ -29,15 +29,16 @@
   }
 
   &__register {
-    h1 {
+    &--heading {
       font-weight: 800;
-      font-size: 50px;
+      font-size: 40px;
       text-align: center;
     }
-    p {
-      font-weight: 600;
+    &--descript {
+      font-size: 22px;
+      font-family: $MaaxRoundedTrial;
       text-align: center;
-      color: rgb(133, 131, 131);
+      color: #000000d6;
     }
   }
 
@@ -85,7 +86,7 @@
       border: none;
     }
 
-    .form__name{
+    .form__name {
       line-height: 2;
       text-align: left;
       display: block;
@@ -94,18 +95,21 @@
       font-weight: 600;
       color: rgb(133, 131, 131);
     }
-
   }
 
   @media screen and (max-width: 768px) {
     .form {
-      &__heading {
-        font-size: 30px;
-        padding: 0 5px;
-      }
-      &__descript {
-        text-align: center;
-        padding: 0 50px;
+      &__register {
+        &--heading {
+          font-size: 25px;
+          padding: 0 5px;
+        }
+        &--descript {
+          font-size: 16px;
+          letter-spacing: 0.46px;
+          text-align: center;
+          padding: 0 50px;
+        }
       }
 
       &__card {
@@ -116,16 +120,27 @@
         }
       }
 
-      &__input{
+      &__input {
         margin-top: 40px;
-        form{
+        form {
           padding: 20px;
+        }
+        .btn__pink {
+          // font-size: 16px;
+          // font-weight: bold;
+          // text-align: center;
+          padding: 12px 0;
+          width: 100%;
+          border-radius: 5px;
+          display: block;
+          max-width: 284px;
+          margin: auto;
         }
       }
 
-      &__group{
-        .form__name{
-        padding-left: 20px;
+      &__group {
+        .form__name {
+          padding-left: 20px;
         }
       }
     }

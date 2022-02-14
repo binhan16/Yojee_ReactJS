@@ -1,4 +1,4 @@
-@import "../bootstrap/variables";
+@import "./../bootstrap/variables";
 
 .amount {
   margin-top: -81px;
@@ -20,18 +20,20 @@
   }
 
   &__body {
-    h1 {
+    text-align: center;
+    &--heading {
       text-align: center;
       color: $white;
       font-weight: 800;
-      font-size: 50px;
+      font-size: 42px;
       padding-bottom: 20px;
     }
-    .title {
+    &--title {
       text-align: center;
       color: $white;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 400;
+      margin-bottom: 40px;
     }
     ul {
       align-items: center;
@@ -39,54 +41,61 @@
       li {
         height: auto;
         list-style: none;
-        padding: 0 10px;
-        flex-direction: column;
+        // padding: 0 10px;
+        // flex-direction: column;
         align-items: center;
       }
     }
   }
 
   &__circle {
-    width: 330px;
-    height: 330px;
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    margin: auto;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    border: 10px solid $white;
+    border: 2px solid $white;
     display: flex;
     &--text {
       color: $white;
-      font-size: 45px;
-      font-weight: bold;
-      line-height: 36px;
+      font-size: 30px;
+      font-weight: 600;
     }
   }
   &__descript {
     text-align: center;
     color: white;
-    font-family: "MaaxRoundedTrial", "Arial", Sans-Serif;
-    font-size: 25px;
+    font-family: $MaaxRoundedTrial;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
-    margin: 40px 0px 0px 0px;
-    padding: 0 30px;
+    margin: 0;
+    padding: 20px 50px 0px;
   }
 
   @media screen and(max-width: 768px) {
     .amount {
       &__body {
-        h1 {
-          font-size: 40px;
+        &--heading {
+          font-size: 25px;
         }
-        p {
-          font-size: 20px;
-          padding: 0 40px;
+        &--title {
+          font-size: 16px;
+          padding: 0 80px;
         }
       }
 
-      &__circle{
-        margin: auto;
+      &__circle {
+        &--text {
+          font-size: 30px;
+        }
+      }
+      &__descript {
+        font-size: 16px;
+        padding: 20px 100px 0;
       }
     }
   }

@@ -1,4 +1,4 @@
-@import "../bootstrap/variables";
+@import "./../bootstrap/variables";
 
 .footer {
   background-color: $black_33;
@@ -112,10 +112,9 @@
       }
 
       .social__media--wrap ul {
-        display:flex;
-        margin:0;
+        display: flex;
+        margin: 0;
       }
-
     }
   }
 }

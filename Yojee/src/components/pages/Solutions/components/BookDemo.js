@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../assets/scss/bootstrap/_bookDemo.scss";
+import "../../../../assets/scss/layout/_bookDemo.scss";
 import { Link } from "react-router-dom";
 
 function BookDemo() {

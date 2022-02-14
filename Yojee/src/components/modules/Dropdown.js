@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   Dropdown,
@@ -7,14 +5,30 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-import Submenu from './Submenu';
+import { FaChevronRight } from "react-icons/fa";
+import Submenu from "./Submenu";
 import "../../assets/scss/bootstrap/_dropdown.scss";
 
+// const DropOur = () => {
+//   const [data, setData] = useState(false);
+//   const [delayHandler, setDelayHandler] = useState(false);
+//   const handleMouseEnter = (event) => {
+//     setDelayHandler(
+//       setTimeout(() => {
+//         const yourData = toggle;
+//         setData(yourData); // whatever your data is
+//       }, 500)
+//     );
+//   };
+// };
+
+// const debounce = require("debounce");
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
+    const finalMouseDelay = props.mouseDelay || 300;
 
-    this.toggle = this.toggle.bind(this);
+    this.toggleHover = debounce(this.toggleHover.bind(this), finalMouseDelay);
 
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
@@ -23,10 +37,14 @@ export default class Example extends React.Component {
     };
   }
 
-  toggle() {
-    this.setState((prevState) => ({
-      dropdownOpen: !prevState.dropdownOpen,
-    }));
+  // toggle() {
+  //   this.setState((prevState) => ({
+  //     dropdownOpen: !prevState.dropdownOpen,
+  //   }));
+  // }
+
+  toggleHover(to) {
+    this.setState({ dropdownOpen: to });
   }
 
   onMouseEnter() {
@@ -45,25 +63,23 @@ export default class Example extends React.Component {
           onMouseOver={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
           isOpen={this.state.dropdownOpen}
-          toggle={this.toggle}
+          toggle={this.toggleHover}
         >
-          <DropdownToggle className="dropdown__btn">Our Software</DropdownToggle>
+          <DropdownToggle className="dropdown__btn">
+            Our Software
+          </DropdownToggle>
           <DropdownMenu className="dropdown__menu">
             <DropdownItem className="dropdown__item">
-              Solving Challenges
-              
+              <span>Solving Challenges</span>
+              <FaChevronRight className="dropdown__icon" />
             </DropdownItem>
             <DropdownItem className="dropdown__item">
               {/* submenu Features */}
-              <Submenu/>
+              <Submenu />
+              <FaChevronRight className="dropdown__icon" />
             </DropdownItem>
-            <DropdownItem className="dropdown__item">
-              Pricing
-              
-            </DropdownItem>
-            <DropdownItem className="dropdown__item">
-              API
-            </DropdownItem>
+            <DropdownItem className="dropdown__item">Pricing</DropdownItem>
+            <DropdownItem className="dropdown__item">API</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>

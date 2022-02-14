@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./../../assets/scss/bootstrap/_chart.scss";
+import "./../../assets/scss/layout/_chart.scss";
 
 export default class Chart extends Component {
   state = {
@@ -27,8 +27,7 @@ export default class Chart extends Component {
       <>
         <div className="chart">
           <p className="chart__heading">
-            Automate your operations with delivery
-            <br /> management software
+            Automate your operations with delivery management software
           </p>
           <div className="container ">
             <div className="row">
@@ -37,8 +36,7 @@ export default class Chart extends Component {
                 <br />
                 <p>
                   Get real-time ETA based on the drivers location while keeping{" "}
-                  <br /> your customers informed and dramatically reduces
-                  customer{" "}
+                  your customers informed and dramatically reduces customer{" "}
                 </p>
               </div>
               <div className="chart__right col-sm-5 col-12">

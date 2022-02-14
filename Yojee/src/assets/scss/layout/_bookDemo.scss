@@ -1,4 +1,4 @@
-@import "../bootstrap/variables";
+@import "./../bootstrap/variables";
 
 .bookDemo {
   margin-bottom: 0px;
@@ -40,13 +40,13 @@
     padding: 40px 0px;
   }
 
-  &__text{
+  &__text {
     font-size: 25px;
-    color:$white;
+    color: $white;
   }
 
-  &__btn{
-    color:$black_0;
+  &__btn {
+    color: $black_0;
     background-color: $white;
     border-radius: 12px;
     padding: 10px 50px;
@@ -55,18 +55,18 @@
   }
 
   @media screen and(max-width: 768px) {
-    .bookDemo{
-      &__body{
+    .bookDemo {
+      &__body {
         margin-top: 0;
         padding-bottom: 70px;
       }
 
-      &__text{
+      &__text {
         font-size: 17px;
         padding: 0 20px;
       }
 
-      &__btn{
+      &__btn {
         margin-top: 20px;
         font-size: 16px;
         padding: 8px 60px;

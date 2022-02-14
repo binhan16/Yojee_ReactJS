@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 // import { TabContent, TabPane, Row, Col } from "reactstrap";
-import "../../../../assets/scss/bootstrap/_tab.scss";
+import "../../../../assets/scss/layout/_tab.scss";
 
 class Tab extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={ changeTab:true};
+    this.state = { changeTab: true };
 
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(){
-    this.setState(prevState => ({
-      changeTab:!prevState.changeTab
+  handleClick() {
+    this.setState((prevState) => ({
+      changeTab: !prevState.changeTab,
     }));
   }
 
@@ -37,7 +37,9 @@ class Tab extends Component {
             <div className="col-md-4">
               <div
                 onClick={this.handleClick}
-               className={this.state.changeTab ? "tab__btn" : "tab__btn--active"}
+                className={
+                  this.state.changeTab ? "tab__btn" : "tab__btn--active"
+                }
               >
                 SAAS PLATFORM
               </div>
@@ -45,7 +47,9 @@ class Tab extends Component {
             <div className="col-md-4">
               <div
                 onClick={this.handleClick}
-               className={this.state.changeTab ? "tab__btn" : "tab__btn--active"}
+                className={
+                  this.state.changeTab ? "tab__btn" : "tab__btn--active"
+                }
               >
                 REDUCE COST
               </div>
@@ -53,7 +57,9 @@ class Tab extends Component {
             <div className="col-md-4">
               <div
                 onClick={this.handleClick}
-               className={this.state.changeTab ? "tab__btn" : "tab__btn--active"}
+                className={
+                  this.state.changeTab ? "tab__btn" : "tab__btn--active"
+                }
               >
                 IMPROVE VISIBILITY
               </div>

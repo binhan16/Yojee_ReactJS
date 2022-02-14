@@ -9,32 +9,32 @@ function Carousel() {
         <div className="carousel-content col-12 col-sm-8 ">
           <div className="carousel__text ">
             <h1 className="carousel__heading">See the world flow</h1>
-            <p className="font-weight-bold">
+            <p>
               Gain full visibility on your logistics operations, manage your
-              partners <br /> and scale your business
+              partners and scale your business
             </p>
           </div>
           <div className="carousel__button">
-            <p>Chose your solutions:</p>
-            <ul className=" row    list-unstyled">
+            <h4>Chose your solutions:</h4>
+            <ul className=" row list-unstyled">
               <li>
                 <Link to="/solutions">
-                  <button className="btn__chose btn-1 mr-3">
-                    <span>ALL-IN-ONE SAAS PLATFORM</span>
+                  <button className="btn__chose ">
+                    <span>All-in-one SaaS Platform</span>
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to="/solutions">
-                  <button className="btn__chose btn-2 mr-3">
-                    <span>REDUCE COST</span>
+                  <button className="btn__chose ">
+                    <span>Reduce Cost</span>
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to="/solutions">
-                  <button className="btn__chose btn-1 mr-3">
-                    <span>IMPROVE VISIBILITY</span>
+                  <button className="btn__chose ">
+                    <span>Improve Visibility</span>
                   </button>
                 </Link>
               </li>

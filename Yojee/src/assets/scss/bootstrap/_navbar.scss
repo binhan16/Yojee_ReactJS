@@ -1,4 +1,4 @@
-@import "../bootstrap/variables";
+@import "./variables";
 
 .navbar {
   background: $white;
@@ -209,7 +209,7 @@
       }
 
       .menu-icon {
-        display: block!important;
+        display: block !important;
         position: absolute;
         top: 0;
         right: 0;

@@ -1,10 +1,11 @@
-@import "../bootstrap/variables";
+@import "./../bootstrap/variables";
 
 .chart {
   padding-top: 30px;
   background-color: #fff7fe;
   width: 100%;
   padding-bottom: 80px;
+  text-align: center;
   &::after {
     margin-top: 50px;
     background-image: linear-gradient(
@@ -26,11 +27,11 @@
     position: sticky;
     z-index: 1;
   }
-  p {
-    text-align: center;
+  &__heading {
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: 20px;
+    padding: 0 400px 50px;
+    // padding-bottom: 50px;
   }
   .row {
     display: flex;
@@ -39,14 +40,15 @@
   }
   &__left {
     img {
-      max-width: 750px;
+      max-width: 600px;
       width: 100%;
-      height: 370px;
+      height: auto;
       padding-bottom: 20px;
     }
     p {
+      color: $black_55;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 16px;
       text-align: left;
       padding: 0 50px;
     }
@@ -63,6 +65,7 @@
     display: flex;
     align-items: center;
     color: $black_0;
+    font-size: 16px;
     font-weight: 400;
     padding-bottom: 25px;
     &:hover {
@@ -94,53 +97,56 @@
   @media screen and(max-width: 768px) {
     .chart {
       &__heading {
-        padding: 0 20px;
-        font-size: 30px;
+        padding: 0 50px;
+        font-size: 25px;
         font-weight: 800;
       }
 
       &__left {
-        text-align: center;
         p {
           text-align: center;
-          font-size: 18px;
+          font-size: 16px;
+          opacity: 1;
+          padding: 0 20px;
+          color: $black_55;
         }
       }
 
       &__right {
         display: flex;
-        text-align: center;
-
-        .chart-text,.chart-icon{
+        .chart-text,
+        .chart-icon {
           text-align: center;
         }
 
-        .chart-icon img{
-          max-width:30px;
+        .chart-icon img {
+          max-width: 30px;
           margin-left: -20px;
         }
 
-        .chart-content{
+        .chart-content {
           display: none;
         }
       }
-
-      
     }
 
-    .btn{
+    .btn {
       .btn__find {
+        font-family: "MaaxRoundedTrial", "Arial";
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px 0;
+        width: 100%;
+        color: #ffffff;
+        background: $pink;
+        border-radius: 5px;
         display: block;
-        background-color: $pink;
-        font-size: 18px;
-        font-weight: 600;
-        color: white;
-        padding: 10px 40px;
+        max-width: 284px;
+        margin: auto;
         border: none;
-        border-radius: 10px;
-        margin: 0 130px;
       }
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
     }

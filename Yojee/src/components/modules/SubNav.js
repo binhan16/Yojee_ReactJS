@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   Dropdown,
@@ -7,8 +5,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-import "../../assets/scss/bootstrap/_subnav.scss";
-
+import "../../assets/scss/layout/_subnav.scss";
 
 export default class SubNav extends React.Component {
   constructor(props) {
@@ -18,7 +15,7 @@ export default class SubNav extends React.Component {
 
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.state = {
-        subNavOpen: false,
+      subNavOpen: false,
     };
   }
 
@@ -31,7 +28,6 @@ export default class SubNav extends React.Component {
   onMouseEnter() {
     this.setState({ subNavOpen: true });
   }
-
 
   render() {
     return (
@@ -46,18 +42,10 @@ export default class SubNav extends React.Component {
           <DropdownMenu className="subnav__menu">
             <DropdownItem className="subnav__item">
               Solving Challenges
-              
             </DropdownItem>
-            <DropdownItem className="subnav__item">
-                Featured
-            </DropdownItem>
-            <DropdownItem className="subnav__item">
-              Pricing
-              
-            </DropdownItem>
-            <DropdownItem className="subnav__item">
-              API
-            </DropdownItem>
+            <DropdownItem className="subnav__item">Featured</DropdownItem>
+            <DropdownItem className="subnav__item">Pricing</DropdownItem>
+            <DropdownItem className="subnav__item">API</DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </div>

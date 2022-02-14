@@ -12,28 +12,23 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  // const handleOpenSubMenu=()=>{
-  //   if(!<Dropdown/>){
-  //     setClick()
+
+  // const showButton = () => {
+  //   if (window.innerWidth <= 960) {
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
   //   }
   // };
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
 
   const [subnav, setSubnav] = useState(false);
   const showSubMenu = () => setSubnav(!subnav);
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
 
-  window.addEventListener("resize", showButton);
+  // window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -53,12 +48,11 @@ function Navbar() {
                 onClick={showSubMenu}
               >
                 {subnav ? <SubNav /> : <Dropdown />}
-                <FaChevronRight className="nav-icon d-none"/>
+                <FaChevronRight className="nav-icon d-none" />
                 <ul className={subnav ? <SubNav /> : <Dropdown />}></ul>
               </Link>
-              
             </li>
-            
+
             <li className="nav-item">
               <Link className="nav-links" to="/industry">
                 Industry
