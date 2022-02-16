@@ -9,28 +9,12 @@ import { FaChevronRight } from "react-icons/fa";
 import Submenu from "./Submenu";
 import "../../assets/scss/bootstrap/_dropdown.scss";
 
-// const DropOur = () => {
-//   const [data, setData] = useState(false);
-//   const [delayHandler, setDelayHandler] = useState(false);
-//   const handleMouseEnter = (event) => {
-//     setDelayHandler(
-//       setTimeout(() => {
-//         const yourData = toggle;
-//         setData(yourData); // whatever your data is
-//       }, 500)
-//     );
-//   };
-// };
-
-// const debounce = require("debounce");
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
-    // const finalMouseDelay = props.mouseDelay || 300;
 
-    this.onMouseEnter = this.onMouseEnter.bind(this);
+    this.onMouseOver = this.onMouseOver.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
-    // this.toggleHover = debounce(this.toggleHover.bind(this), 300);
     this.state = {
       dropdownOpen: false,
     };
@@ -42,27 +26,25 @@ export default class Example extends React.Component {
     }));
   }
 
-  // toggleHover() {
-  //   this.setState((prevState) => ({ dropdownOpen: !prevState.dropdownOpen }));
-  // }
-
-  onMouseEnter() {
+  onMouseOver = () => {
     this.setState({ dropdownOpen: true });
-  }
+  };
 
-  onMouseLeave() {
+  onMouseLeave = () => {
     this.setState({ dropdownOpen: false });
-  }
+  };
 
   render() {
     return (
-      <div>
+      <div
+        className="tab__dropdown"
+        onMouseOver={this.onMouseOver}
+        onMouseLeave={this.onMouseLeave}
+      >
         <Dropdown
           className="dropdown d-inline-block"
-          onMouseOver={this.onMouseEnter}
-          onMouseLeave={this.onMouseLeave}
           isOpen={this.state.dropdownOpen}
-          toggle={this.toggleHover}
+          // toggle={this.toggle}
         >
           <DropdownToggle className="dropdown__btn">
             Our Software

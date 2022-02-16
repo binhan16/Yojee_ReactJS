@@ -1,60 +1,64 @@
 @import "./variables";
-
-.dropdown {
-  &__btn {
-    color: $black_33;
-    background-color: transparent;
-    border-color: none;
-    font-size: 16px;
-    border: none;
-    &:hover,
-    :active {
-      background-color: $white;
-      color: $pink;
+.tab__dropdown {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  .dropdown {
+    &__btn {
+      color: $black_33;
+      background-color: transparent;
+      border-color: none;
+      font-size: 16px;
+      border: none;
+      &:hover,
+      :active {
+        background-color: $white;
+        color: $pink;
+      }
     }
-  }
 
-  &__menu {
-    background: $white
-      linear-gradient(
-        114deg,
-        rgba(46, 49, 145, 0.05) 0%,
-        rgba(81, 44, 151, 0.05) 28%,
-        rgba(172, 34, 168, 0.05) 91%,
-        rgba(187, 33, 171, 0.05) 100%
-      )
-      0% 0% no-repeat padding-box;
-    padding: 70px 10px;
-    box-shadow: inset 7px 0 9px -7px #00000029, 3px 2px 4px 0px;
-    // margin-top: 10px;
-  }
-
-  &__item {
-    font-size: 16px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    &:hover {
-      color: $pink;
-      font-weight: 600;
+    &__menu {
+      background: $white
+        linear-gradient(
+          114deg,
+          rgba(46, 49, 145, 0.05) 0%,
+          rgba(81, 44, 151, 0.05) 28%,
+          rgba(172, 34, 168, 0.05) 91%,
+          rgba(187, 33, 171, 0.05) 100%
+        )
+        0% 0% no-repeat padding-box;
+      padding: 70px 10px;
+      box-shadow: inset 7px 0 9px -7px #00000029, 3px 2px 4px 0px;
+      margin-top: 30px;
     }
-    &:active {
-      background-color: none;
-      color: $pink;
+
+    &__item {
+      font-size: 16px;
+      margin-bottom: 20px;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      &:hover {
+        color: $pink;
+        font-weight: 600;
+      }
+      &:active {
+        background-color: none;
+        color: $pink;
+      }
     }
+
+    &__icon {
+      float: right;
+      margin: auto 0 auto 40px;
+
+      font-size: 10px;
+    }
+
+    // &-item {
+    //   &:hover {
+    //     background-color: none;
+    //   }
+    // }
   }
-
-  &__icon {
-    float: right;
-    margin: auto 0 auto 40px;
-
-    font-size: 10px;
-  }
-
-  // &-item {
-  //   &:hover {
-  //     background-color: none;
-  //   }
-  // }
 }

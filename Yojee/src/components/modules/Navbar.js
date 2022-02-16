@@ -13,22 +13,22 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // const showButton = () => {
-  //   if (window.innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
 
   const [subnav, setSubnav] = useState(false);
   const showSubMenu = () => setSubnav(!subnav);
 
-  // useEffect(() => {
-  //   showButton();
-  // }, []);
+  useEffect(() => {
+    showButton();
+  }, []);
 
-  // window.addEventListener("resize", showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
