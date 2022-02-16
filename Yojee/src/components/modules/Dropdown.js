@@ -26,26 +26,25 @@ import "../../assets/scss/bootstrap/_dropdown.scss";
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
-    const finalMouseDelay = props.mouseDelay || 300;
-
-    this.toggleHover = debounce(this.toggleHover.bind(this), finalMouseDelay);
+    // const finalMouseDelay = props.mouseDelay || 300;
 
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
+    // this.toggleHover = debounce(this.toggleHover.bind(this), 300);
     this.state = {
       dropdownOpen: false,
     };
   }
 
-  // toggle() {
-  //   this.setState((prevState) => ({
-  //     dropdownOpen: !prevState.dropdownOpen,
-  //   }));
-  // }
-
-  toggleHover(to) {
-    this.setState({ dropdownOpen: to });
+  toggle() {
+    this.setState((prevState) => ({
+      dropdownOpen: !prevState.dropdownOpen,
+    }));
   }
+
+  // toggleHover() {
+  //   this.setState((prevState) => ({ dropdownOpen: !prevState.dropdownOpen }));
+  // }
 
   onMouseEnter() {
     this.setState({ dropdownOpen: true });
